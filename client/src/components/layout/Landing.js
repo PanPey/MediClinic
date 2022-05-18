@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
+import { ReactComponent as RC } from "../../img/new.svg";
 
 import '../../App.css';
 
@@ -17,25 +18,26 @@ const Landing = ({isDoctorAuthenticated, isUserAuthenticated}) => {
             <section id="landing">
                 <div className="container">
                     <div className="heading">
-                        <h1 className="main-heading">Find Your Best Doctor &</h1>
+                        <h1 className="main-heading">Where patients find doctors </h1>
                         <h1 className="main-heading">Book Your <span className="main-span">Appointment.</span></h1>
                     </div>
                     <div className="signup">
                         <div className="doctor-signup">
-                            <h2 className=" item heading-sub"><strong>For Doctors</strong></h2>
-                            <p className="item description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel itaque quae delectus veritatis consequatur hic!</p>
+                            <h2 className=" item heading-sub"><strong>Doctors Way</strong></h2>
+                            <p className="item description">99% of doctors like our platform. Come and be a part of this amazing journey together!</p>
                             <Link to="/registerDoctor" type="button" className="item btn btn-info">Sign Up</Link>
                         </div>
                         <div className="user-signup">
-                            <h2 className="item heading-sub"><strong>For Users</strong></h2>
-                            <p className="item special description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel itaque quae delectus veritatis consequatur hic!</p>
+                            <h2 className="item heading-sub"><strong>Users way</strong></h2>
+                            <p className="item special description">Connect with amazing doctors worldwide. Get solutions to your problems instantly.</p>
                             <Link to="/registerUser" className="item btn btn-outline-info">Sign Up</Link>
                         </div>
                     </div>
                     <br />
                     <div className="img">
                         <div className="img-1">
-                            <img src={require("../../img/undraw_doctor_kw5l.svg")}  />
+                            {/* <img src={require("../../img/new.svg")}/> */}
+                            <RC />
                         </div>
                     </div>
                 </div>
