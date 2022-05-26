@@ -3,6 +3,7 @@ import { Link, Redirect } from 'react-router-dom';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import { ReactComponent as RC } from "../../img/new.svg";
+import Tour from '../tour/tour';
 
 import '../../App.css';
 
@@ -15,6 +16,7 @@ const Landing = ({isDoctorAuthenticated, isUserAuthenticated}) => {
 
     return (
         <Fragment>
+            <Tour />
             <section id="landing">
                 <div className="container">
                     <div className="heading">
