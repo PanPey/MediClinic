@@ -4,6 +4,7 @@ import JoyRide from "react-joyride";
 const TOUR_STEPS = [
     {
       target: ".heading",
+      title: "Title is great",
       content: "This is MediClinic",
       disableBeacon: true
     },
@@ -11,7 +12,20 @@ const TOUR_STEPS = [
       target: ".user-signup",
       content: "This is MediClinic",
       disableBeacon: true
+    },
+   
+    {
+      target: ".doctor-signup",
+      content: "This is MediClinic",
+      disableBeacon: true
+    },
+
+    {
+      target: ".nav-logo",
+      content: "This is MediClinic",
+      disableBeacon: true
     }
+
   ];
 
   const Tour = () => {
